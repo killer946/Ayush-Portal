@@ -1,0 +1,146 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  color: #2a2d45;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  margin: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2a2d45;
+}
+
+.logo span {
+  color: #d4a017;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.3);
+  color: #2a2d45;
+}
+
+nav a:hover {
+  background: #d4a017;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 60px;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.tag {
+  background: linear-gradient(45deg, #d4a017, #c09017);
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+.tag1 {
+  background: linear-gradient(45deg, #d4a017, #c09017);
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 10px;
+  color: #2a2d45;
+}
+
+.name {
+  color: #d4a017;
+  text-shadow: 2px 2px 10px rgba(212, 160, 23, 0.5);
+}
+
+h2 {
+  font-size: 26px;
+  color: #565a6e;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.hire-btn {
+  background: linear-gradient(45deg, #2a2d45, #1e2233);
+  color: white;
+  padding: 14px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(42, 45, 69, 0.4);
+}
+
+.hire-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #1e2233, #121528);
+  box-shadow: 0px 10px 20px rgba(42, 45, 69, 0.6);
+}
+
+/* Illustration */
+.illustration img {
+  max-width: 80%;
+  height: 380px;
+  animation: floatAnimation 3s infinite ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
